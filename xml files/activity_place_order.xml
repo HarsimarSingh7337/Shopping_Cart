@@ -1,0 +1,233 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shopping_cart.PlaceOrder" >
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+    <LinearLayout  android:id="@+id/ll0"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/orange1">
+        
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sc"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textColor="@color/white"/>
+      </LinearLayout>
+      
+    <TextView android:id="@+id/t0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/orderhere"
+        android:layout_below="@+id/ll0"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"/>
+      
+    <LinearLayout android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/t0"
+        android:layout_marginTop="30dp">
+        
+    <TextView android:id="@+id/OrderId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/oid"
+        android:textStyle="bold"
+        android:layout_marginStart="40dp"/>
+    
+    <EditText android:id="@+id/editOrderId"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:editable="false"
+        android:layout_marginStart="55dp"/>
+    <requestFocus />
+</LinearLayout>
+
+    <LinearLayout android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/ll1"
+        android:layout_marginTop="20dp">
+        
+    <TextView android:id="@+id/ProductName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pname"
+        android:textStyle="bold"
+        android:layout_marginStart="40dp"/>
+    
+    <Spinner android:id="@+id/spinnerProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:editable="false"
+        android:layout_marginStart="20dp"/>
+       
+   
+    <requestFocus />
+</LinearLayout>
+    
+    
+
+    <LinearLayout android:id="@+id/ll3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/ll2"
+        android:layout_marginTop="20dp">
+        
+    <TextView android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/price"
+        android:textStyle="bold"
+        android:layout_marginStart="40dp"/>
+    
+    <EditText android:id="@+id/editPrice"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:editable="false"
+        android:layout_marginStart="70dp"/>
+    <requestFocus />
+</LinearLayout>
+
+    <LinearLayout android:id="@+id/ll4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/ll3"
+        android:layout_marginTop="20dp">
+        
+    <TextView android:id="@+id/Qty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/qty"
+        android:textStyle="bold"
+        android:layout_marginStart="40dp"/>
+    
+    <Spinner android:id="@+id/spinnerQty"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:editable="false"
+        android:layout_marginStart="56dp"/>
+    
+</LinearLayout>
+
+    <LinearLayout android:id="@+id/ll5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/ll4"
+        android:layout_marginTop="20dp">
+        
+    <TextView android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/amount"
+        android:textStyle="bold"
+        android:layout_marginStart="40dp"/>
+    
+    <EditText android:id="@+id/editAmount"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:editable="false"
+        android:layout_marginStart="53dp"/>
+    <requestFocus />
+   </LinearLayout>
+    <LinearLayout android:id="@+id/ll6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/ll5"
+        android:layout_marginTop="20dp">
+        
+    <TextView android:id="@+id/discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/discount"
+        android:textStyle="bold"
+        android:layout_marginStart="40dp"/>
+    
+    <EditText android:id="@+id/editDiscount"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_marginStart="45dp"/>
+    <requestFocus />
+   </LinearLayout>
+   
+    <LinearLayout android:id="@+id/ll7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/ll6"
+        android:layout_marginTop="20dp">
+        
+    <TextView android:id="@+id/tbill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tbill"
+        android:textStyle="bold"
+        android:layout_marginStart="40dp"/>
+    
+    <EditText android:id="@+id/editTBill"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:editable="false"
+        android:layout_marginStart="45dp"/>
+    <requestFocus />
+   </LinearLayout>
+
+    <LinearLayout android:id="@+id/ll8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/ll7"
+        android:layout_marginTop="25dp"
+        android:gravity="center">
+  
+  <Button android:id="@+id/generateBill"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="@string/gbill"
+        android:background="@drawable/roundbutton"
+        android:onClick="GenerateBill"
+        android:gravity="center"/>
+        
+        
+    </LinearLayout>
+    <LinearLayout android:id="@+id/ll9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/ll8"
+        android:layout_marginTop="40dp">
+    
+    <Button android:id="@+id/PlaceOrder"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/proceed"
+        android:background="@drawable/roundbutton"
+        android:onClick="Proceed"
+        android:layout_marginStart="30dp"/>
+
+ <Button android:id="@+id/GoBack"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/goback"
+        android:background="@drawable/roundbutton"
+        android:onClick="GoBack"
+        android:layout_marginStart="60dp"/>
+    </LinearLayout>
+ 
+</RelativeLayout>
+</ScrollView>

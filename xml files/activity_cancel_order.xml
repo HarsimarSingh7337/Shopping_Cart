@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shopping_cart.CancelOrder" >
+
+    <LinearLayout  android:id="@+id/ll0"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/orange1">
+        
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sc"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textColor="@color/white"/>
+      </LinearLayout>
+      
+    <TextView android:id="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tco"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@+id/ll0"/>
+    
+    <LinearLayout android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/t2">
+        "
+    <TextView android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enterid"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp" />
+    
+    <EditText android:id="@+id/cancelorderid"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"/>
+    <requestFocus/>"
+
+    </LinearLayout>
+    
+    <Button android:id="@+id/btncancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/click"
+        android:layout_below="@+id/ll1"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/roundbutton"
+        android:layout_marginStart="120dp"
+        android:onClick="CancelOrderbtn"/>
+</RelativeLayout>

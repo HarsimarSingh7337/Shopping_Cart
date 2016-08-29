@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shopping_cart.MainActivity" >
+
+<LinearLayout android:id="@+id/ll1"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+    android:background="@color/orange1"
+    android:gravity="center">
+    
+<TextView android:id="@+id/t1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/sc"
+    android:textColor="@color/white"
+    android:textSize="25sp"
+    android:gravity="center"/>
+
+    </LinearLayout>
+    
+    <Button android:id="@+id/placeorder"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="120dp"
+        android:text="@string/porder"
+        android:layout_below="@+id/ll1"
+        android:onClick="PlaceOrder"
+        android:background="@drawable/roundbutton"/>
+        
+
+    <Button android:id="@+id/cancelorder"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="120dp"
+        android:text="@string/corder"
+        android:layout_below="@+id/placeorder"
+        android:onClick="CancelOrder"
+        android:background="@drawable/roundbutton"/>
+        
+   <Button android:id="@+id/vieworder"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="120dp"
+        android:text="@string/vorder"
+        android:layout_below="@+id/cancelorder"
+        android:onClick="ViewOrder"
+        android:background="@drawable/roundbutton"/>
+    
+</RelativeLayout>

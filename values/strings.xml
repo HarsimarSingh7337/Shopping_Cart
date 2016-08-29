@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Shopping_Cart</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="porder">Place Order</string>
+    <string name="corder">Cancel Order</string>
+    <string name="vorder">View Order</string>
+    <string name="sc">Shopping Cart</string>
+    <string name="title_activity_place_order">PlaceOrder</string>
+    <string name="title_activity_cancel_order">CancelOrder</string>
+    <string name="oid">Order ID:</string>
+    <string name="pname">Product Name:</string>
+    <string name="qty">Quantity:</string>
+    <string name="price">Price:</string>
+    <string name="discount">Discount:</string>
+    <string name="amount">Amount:</string>
+    <string name="emptytable">Clear my Table</string>
+    <string name="orderhere">Place your Order below:</string>
+    <string name="proceed">Proceed</string>
+    <string name="goback">Go Back</string>
+    <string name="tbill">Total Bill:</string>
+    <string name="gbill">Generate Bill</string>
+    <string name="enterid">Enter Order Id:</string>
+    <string name="tco">To cancel your order, enter OrderId below:</string>
+    <string name="tvo">To View your given Order, enter OrderId below:</string>
+    <string name="click">Click</string>
+    <string name="title_activity_view_order">ViewOrder</string>
+
+</resources>
